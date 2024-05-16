@@ -85,9 +85,13 @@
 
 % MARGINS: 30mm on the left and right-hand sides, 
 % 20mm on the top and bottom margins.
-\usepackage[a4paper, 
-            left=30mm, right=30mm,
-            top=20mm, bottom=20mm]{geometry}
+\usepackage[
+    a4paper,
+    left=30mm, right=30mm,
+    top=20mm, bottom=20mm,
+    includehead,includefoot,
+]
+{geometry}
 %\usepackage[]{showframe} % uncomment to show frames around pages
 %%%%%%% 
 
@@ -102,6 +106,9 @@
 \fancyhead[LE]{\thepage}
 \fancyhead[LO]{\rightmark}
 \fancyhead[RO]{\thepage}
+
+\setlength{\headheight}{10mm}
+\renewcommand{\headrulewidth}{0.5pt}
 
 % allows more space at the bottom of the page to stop all the warnings from 
 % latex as well as the large gaps that can appear between paragraphs.
