@@ -117,6 +117,12 @@
 \newcommand{\thesisSubjectName}{YOUR SUBJECT HERE} % e.g. Computer Science
 \newcommand{\thesisDepartmentName}{YOUR DEPARTMENT HERE} % e.g. Department of Computer Science
 
+\newcommand{\logo}{
+\vspace{10mm}
+\includegraphics[width=6cm]{exeter.png}
+\vspace{10mm}
+}
+
 % Copyright declaration.
 \newcommand{\statement}{
 \vspace{5mm}
@@ -145,14 +151,18 @@ Signed: \makebox[3in]{\dotfill}\\[-3pt]
 % Set the titlepage properties.   
 \author{}
 
-\title{
-\vspace{-30mm}
-\large{University of Exeter \\[-3mm]
-    \thesisDepartmentName}\\[20mm]
+\title {
+    \vspace{-30mm}
     \begin{spacing}{1.0}
-      \huge{\textbf{\thesisTitle}}\\[10mm]
+       \huge{\textbf{\thesisTitle}}\\
     \end{spacing}
-    \Large{\thesisMyName}
+    \logo{} \\ [-5mm]
+    \LARGE{\thesisMyName} \\
+    \large{
+        \thesisDepartmentName \\
+        University of Exeter
+    }\\[-15mm]
+    \date{\statement}
 }
 \date{\statement}
 
