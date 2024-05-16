@@ -301,15 +301,20 @@ Signed: \makebox[3in]{\dotfill}\\[-3pt]
 
 \pagenumbering{roman} % start with roman numbering
 
-% ABSTRACT
-\phantomsection
-\addcontentsline{toc}{chapter}{Abstract}
-\include{ch0/abstract}
-
 %% Acknowledgements.
 \phantomsection
 \addcontentsline{toc}{chapter}{Acknowledgements}
 \include{ch0/acknowledgements}
+
+% List of Publications
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Publications}
+\include{ch0/publication}
+
+% ABSTRACT
+\phantomsection
+\addcontentsline{toc}{chapter}{Abstract}
+\include{ch0/abstract}
 
 %% TABLES OF CONTENTS / FIGURES / TABLES
 \tableofcontents
