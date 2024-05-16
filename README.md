@@ -1,4 +1,26 @@
-# Thesis Template: University of Exeter (unofficial)
+# University of Exeter
+
+> Thesis Template (Computer Science)
+
+Based on [George's template](https://github.com/georgedeath/University_of_Exeter_Thesis_Template), I added the university logo and header.
+
+```
+$ sudo apt install texlive-base
+$ tlmgr install scheme-full
+$ tlmgr path add
+
+> pdflatex Thesis.tex
+> biber Thesis
+> makeglossaries Thesis
+> pdflatex Thesis.tex
+> pdflatex Thesis.tex
+```
+
+![](overview.png)
+
+<hr />
+
+From George De Ath:
 
 This is a minimum working example of a template that adheres to the
 [University guidelines](http://as.exeter.ac.uk/academic-policy-standards/tqa-manual/pgr/presentationoftheses/)
