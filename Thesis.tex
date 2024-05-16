@@ -29,9 +29,6 @@
 \usepackage{caption}
 \captionsetup{font=small}
 
-% fancy headers
-\usepackage{fancyhdr}
-
 % colours for things
 \usepackage[usenames, dvipsnames, svgnames, table]{xcolor}
 
@@ -93,6 +90,18 @@
             top=20mm, bottom=20mm]{geometry}
 %\usepackage[]{showframe} % uncomment to show frames around pages
 %%%%%%% 
+
+% fancy headers
+\usepackage{fancyhdr}
+\usepackage{calc}% so we can do inline math within \setlength
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[RE]{\leftmark}
+\fancyhead[LE]{\thepage}
+\fancyhead[LO]{\rightmark}
+\fancyhead[RO]{\thepage}
 
 % allows more space at the bottom of the page to stop all the warnings from 
 % latex as well as the large gaps that can appear between paragraphs.
