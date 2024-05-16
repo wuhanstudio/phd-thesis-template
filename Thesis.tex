@@ -5,7 +5,7 @@
 \usepackage[style=authoryear, % cite with authoryear
             citestyle=authoryear,
 %           sorting=none,     % refs appear in the order they are cited
-            backend=bibtex,   % use bibtex backend
+            backend=biber,   % use biber backend
             dashed=false,     % so same author doesnt show up 2nd time as '----'
             natbib=true,      % allow citep and citet
             uniquename=false, % turn off differentiating between authors of same
@@ -90,7 +90,7 @@
 % 20mm on the top and bottom margins.
 \usepackage[a4paper, 
             left=30mm, right=30mm,
-			top=20mm, bottom=20mm]{geometry}
+            top=20mm, bottom=20mm]{geometry}
 %\usepackage[]{showframe} % uncomment to show frames around pages
 %%%%%%% 
 
@@ -145,12 +145,13 @@ Signed: \makebox[3in]{\dotfill}\\[-3pt]
 % Set the titlepage properties.   
 \author{}
 
-\title{\vspace{-30mm}
+\title{
+\vspace{-30mm}
 \large{University of Exeter \\[-3mm]
-	      \thesisDepartmentName}\\[20mm]
+    \thesisDepartmentName}\\[20mm]
     \begin{spacing}{1.0}
-	\huge{\textbf{\thesisTitle}}\\[10mm]
-	\end{spacing}
+      \huge{\textbf{\thesisTitle}}\\[10mm]
+    \end{spacing}
     \Large{\thesisMyName}
 }
 \date{\statement}
